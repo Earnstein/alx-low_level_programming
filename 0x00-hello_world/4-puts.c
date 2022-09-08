@@ -6,6 +6,8 @@
  *
  * main - Entry point
  *
+ * Description: printing strings
+ *
  * Return: Always 0 (Success)
  *
  */
