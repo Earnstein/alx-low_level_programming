@@ -1,8 +1,5 @@
-/**
- * print_hello - p
- */
-
 #include <stdio.h>
+
 #include <unistd.h>
 
 /**
