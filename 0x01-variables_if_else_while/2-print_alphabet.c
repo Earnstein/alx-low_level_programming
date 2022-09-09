@@ -15,7 +15,6 @@ int main(void)
 	for (dami = 'a'; dami <= 'z'; dami++)
 	{
 		putchar(dami);
-		putchar('\n');
 	}
 
 	return (0);
