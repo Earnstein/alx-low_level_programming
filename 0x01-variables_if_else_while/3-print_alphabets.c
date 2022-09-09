@@ -11,7 +11,7 @@
 int main(void)
 {
 	char dami;
-	
+
 	for (dami = 'a'; dami <= 'z'; dami++)
 	{
 		putchar(dami);
