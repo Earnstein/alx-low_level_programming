@@ -13,13 +13,9 @@ int main(void)
 	char dami;
 
 	for (dami = 'a'; dami <= 'z'; dami++)
-	{
 		putchar(dami);
-	}
 	for (dami = 'A'; dami <= 'Z'; dami++)
-	{
 		putchar(dami);
-	}
 	putchar('\n');
 
 	return (0);
