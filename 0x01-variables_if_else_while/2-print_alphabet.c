@@ -16,6 +16,9 @@ int main(void)
 	{
 		putchar(dami);
 	}
+	{
+		putchar('\n');
+	}
 
 	return (0);
 }
