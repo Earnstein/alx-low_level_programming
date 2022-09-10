@@ -2,7 +2,7 @@
 
 /**
  * main - print the alphabet in reverse order
- *
+(*
  * Result: 0 on success
  */
 
