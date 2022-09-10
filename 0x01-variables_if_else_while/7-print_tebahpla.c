@@ -5,15 +5,14 @@
 (*
  * Result: 0 on success
  */
-
 int main(void)
 {
-	char dami = 'z';
+	char d = 'z';
 
-	while (dami >= 'a')
+	while (d >= 'a')
 	{
-		putchar(dami);
-		dami--;
+		putchar(d);
+		d--;
 	}
 	putchar('\n');
 	return (0);
