@@ -2,17 +2,17 @@
 
 /**
  * main - Entry point
-(*
+ *
  * Result: 0 on success
  */
 int main(void)
 {
-	char d = 'z';
+	char c = 'z';
 
-	while (d >= 'a')
+	while (c >= 'a')
 	{
-		putchar(d);
-		d--;
+		putchar(c);
+		c--;
 	}
 	putchar('\n');
 	return (0);
