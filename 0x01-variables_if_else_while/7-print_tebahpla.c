@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print the alphabet in reverse order
+ * main - Entry point
 (*
  * Result: 0 on success
  */
