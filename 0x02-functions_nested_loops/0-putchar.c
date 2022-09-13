@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char dami[9] = "_putchar";
+	char dami[] = "_putchar";
 	int i;
 
 	for (i = 0; i < 9; i++)
