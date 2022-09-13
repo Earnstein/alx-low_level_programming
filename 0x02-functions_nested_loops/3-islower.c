@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _islower - Check character cases
- *
+ * _islower - Entry point
+ * @c: integer representing the acsicc value of lower case characters
  * Return: returns 0 if c is a lower case else 1
  */
 
