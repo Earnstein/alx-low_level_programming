@@ -2,9 +2,7 @@
 
 /**
  * _isalpha - checks whether or not a character is an alphabet
- *
  * @c: ascii value
- *
  * Return: 1 if it is lowercase or 0 otherwise
  */
 
