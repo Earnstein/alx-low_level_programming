@@ -31,5 +31,5 @@ char *cap_string(char *c)
 		}
 		i++;
 	}
-	return (0);
+	return (c);
 }
