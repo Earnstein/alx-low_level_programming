@@ -1,1 +1,1 @@
-Learning C programming with betty
+More tasks on C functions
