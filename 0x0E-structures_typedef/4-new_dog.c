@@ -11,47 +11,37 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
-	char *dog_name, *dog_owner;
+	char *cpyname, *cpyowner;
+	int len_name = 0, len_owner = 0, i;
+
+	if (name == NULL || owner == NULL)
+		return (NULL);
+
+	while (name[len_name])
+		len_name++;
+	while (owner[len_owner])
+		len_owner++;
 
 	new_dog = malloc(sizeof(dog_t));
 	if (new_dog == NULL)
-		return (new_dog);
-	dog_name = malloc(sizeof(name));
-		if (dog_name == NULL)
-		{
-			free(new_dog);
-			return (NULL);
-		}
-		dog_owner = malloc(sizeof(owner));
-		if (dog_owner == NULL)
-		{
-			free(dog_name);
-			free(new_dog);
-			return (NULL);
-		}
-		_strcpy(dog_name, name);
-		_strcpy(dog_owner, owner);
-		new_dog->name = dog_name;
-		new_dog->owner = dog_owner;
-		new_dog->age = age;
-		return (new_dog);
-}
-/**
- *_strcpy - copies string to given memory location
- * @dest: where the string needs to be copied
- * @src: where the string is
- * Return: char
- */
-char *_strcpy(char *dest, char *src)
-{
-	int len = 0;
+		return (NULL);
 
-	while (*(src + len) != '\0')
-	{
-		*(dest + len) = *(src + len);
-		len++;
-	}
-	*(dest + len) = *(src + len);
+	cpyname = malloc(len_name + 1);
+	if (cpyname == NULL)
+		return (NULL);
+	for (i = 0; name[i]; i++)
+		cpyname[i] = name[i];
+	cpyname[i] = '\0';
 
-	return (dest);
+	cpyowner = malloc(len_owner + 1);
+	if (cpyowner == NULL)
+		return (NULL);
+	for (i = 0; owner[i]; i++)
+		cpyowner[i] = owner[i];
+	cpyowner[i] = '\0';
+
+	new_dog->name = cpyname;
+	new_dog->age = age;
+	new_dog->owner = cpyowner;
+	return (new_dog);
 }
